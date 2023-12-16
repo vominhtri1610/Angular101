@@ -1,0 +1,45 @@
+.logo {
+  font-size: 35px;
+  color: #c72092;
+  margin: 5px 0;
+  cursor: pointer;
+  position: relative;
+  left: -4%;
+}
+
+.logo span {
+  color: #6c14d0;
+  text-decoration: underline;
+}
+h1 {
+  margin: 0;
+}
+u {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+ul li a:hover {
+  color: #c72092;
+}
+
+.icons i {
+  margin: 0 4px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.icons i:hover {
+  color: #c72092;
+}

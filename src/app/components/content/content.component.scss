@@ -1,0 +1,39 @@
+:host {
+  display: block;
+}
+
+.list {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.list table {
+  width: 100%;
+}
+
+.list table thead tr th {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.list table thead tr th:first-child {
+  text-align: left;
+}
+
+.list table tbody tr td:first-child {
+  text-align: left;
+}
+
+.list table thead tr th:nth-of-type(4) {
+  text-align: right;
+}
+
+.list table tbody tr td:nth-of-type(4) {
+  text-align: right;
+}
+
+.list table tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}

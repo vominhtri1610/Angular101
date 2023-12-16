@@ -1,0 +1,29 @@
+<div class="list">
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Unit Price</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (product of products; track product.id) {
+      <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.unitPrice }}</td>
+        <td>{{ product.quantity }}</td>
+        <td>
+          {{
+            convertToNumber(product.unitPrice) * product.quantity
+              | number : "1.3-3"
+          }}
+        </td>
+        <td>Delete</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
