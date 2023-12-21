@@ -21,7 +21,9 @@
               | number : "1.3-3"
           }}
         </td>
-        <td>Delete</td>
+        <td class="deleteProduct" (click)="deleteProduct(product.id)">
+          Delete
+        </td>
       </tr>
       }
     </tbody>

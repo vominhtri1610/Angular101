@@ -1,5 +1,5 @@
 .logo {
-  font-size: 35px;
+  font-size: 30px;
   color: #c72092;
   margin: 5px 0;
   cursor: pointer;
@@ -7,10 +7,6 @@
   left: -4%;
 }
 
-.logo span {
-  color: #6c14d0;
-  text-decoration: underline;
-}
 h1 {
   margin: 0;
 }
@@ -42,4 +38,19 @@ ul li a:hover {
 
 .icons i:hover {
   color: #c72092;
+}
+
+.button {
+  min-width: 50px;
+  background-color: #c72092;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
 }

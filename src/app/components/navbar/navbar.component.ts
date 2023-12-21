@@ -8,10 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss',
 })
 export class NavbarComponent {
-  urlImg = 'https://picsum.photos/200/300';
+  isLoggedIn: boolean = true;
 
-  products = {
-    id: 1,
-    name: 'Product 1',
-  };
+  // Hàm xử lý sự kiện đăng nhập
+  login() {
+    this.isLoggedIn = false;
+  }
+
+  // Hàm xử lý sự kiện đăng xuất
+  logout() {
+    this.isLoggedIn = true;
+  }
 }

@@ -15,6 +15,7 @@
 .list table thead tr th {
   font-size: 20px;
   padding-bottom: 15px;
+  color: #c72092;
 }
 
 .list table thead tr th:first-child {
@@ -36,4 +37,8 @@
 .list table tr td {
   border-bottom: 1px solid #ddd;
   padding: 20px 0;
+}
+
+.deleteProduct {
+  cursor: pointer;
 }

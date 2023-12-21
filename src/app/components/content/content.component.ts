@@ -21,4 +21,8 @@ export class ContentComponent {
   convertToNumber(value: string): number {
     return parseFloat(value);
   }
+
+  deleteProduct(id: number) {
+    this.products = this.products.filter((product) => product.id !== id);
+  }
 }
