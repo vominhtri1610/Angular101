@@ -1,0 +1,14 @@
+.list {
+  padding-top: 150px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.list .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: bold;
+  color: #c72092;
+}

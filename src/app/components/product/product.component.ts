@@ -29,8 +29,14 @@ export class ProductComponent {
   })
   product!: any;
 
-  @Output() buyProduct = new EventEmitter<Product>();
-  buy() {
-    this.buyProduct.emit(this.product);
+  @Output() onBuy = new EventEmitter<Product>();
+  @Output() onDelete = new EventEmitter<Product>();
+
+  buyProduct() {
+    this.onBuy.emit(this.product);
+  }
+
+  deleteProduct() {
+    this.onDelete.emit(this.product);
   }
 }
