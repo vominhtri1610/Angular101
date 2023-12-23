@@ -11,6 +11,7 @@
     <ul>
       @for (product of products; track $index) {
       <app-product
+        [routerLink]="['/product', product.id]"
         [sanpham]="product"
         (onBuy)="handleBuyProduct($event)"
         (onDelete)="handleDeleteProduct($event)"
