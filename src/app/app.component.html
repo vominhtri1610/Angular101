@@ -1,4 +1,45 @@
 <section>
   <app-navbar class="nav"></app-navbar>
-  <app-content class="content"></app-content>
+  <!-- <div class="list">
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Total Price</th>
+          <th>Actions</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (product of products; track $index) {
+        <app-product
+          [sanpham]="product"
+          (buyProduct)="handleBuyProduct($event)"
+        ></app-product>
+        }
+      </tbody>
+    </table>
+  </div> -->
+  <div class="list">
+    <div class="row">
+      <span>Product</span>
+      <span>Unit Price</span>
+      <span>Quantity</span>
+      <span>Total Price</span>
+      <span>Actions</span>
+      <span></span>
+    </div>
+    <div>
+      <ul>
+        @for (product of products; track $index) {
+        <app-product
+          [sanpham]="product"
+          (buyProduct)="handleBuyProduct($event)"
+        ></app-product>
+        }
+      </ul>
+    </div>
+  </div>
 </section>

@@ -1,0 +1,8 @@
+<li class="product-info">
+  <span class="name"> {{ product.name }}</span>
+  <span class="unitPrice"> {{ product.unitPrice }}</span>
+  <span class="quantity"> {{ product.quantity }}</span>
+  <span class="total"> {{ product.total | number : ".3-3" }}</span>
+  <span class="buyProduct" (click)="buy()">Buy</span>
+  <span class="deleteProduct">Delete</span>
+</li>

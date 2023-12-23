@@ -1,0 +1,51 @@
+:host {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+span {
+  display: block;
+}
+
+.deleteProduct {
+  cursor: pointer;
+  margin-left: 100px;
+}
+
+.buyProduct {
+  cursor: pointer;
+  margin-left: 170px;
+}
+
+.product-info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin-left: 30px;
+  text-align: right;
+  min-width: 100px;
+}
+
+.unitPrice {
+  margin-left: 120px;
+  text-align: right;
+  min-width: 100px;
+}
+
+.quantity {
+  margin-left: 110px;
+  text-align: right;
+  min-width: 100px;
+}
+
+.total {
+  margin-left: 130px;
+  text-align: right;
+  min-width: 100px;
+}
